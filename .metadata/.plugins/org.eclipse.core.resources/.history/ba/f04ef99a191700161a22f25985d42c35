@@ -1,0 +1,14 @@
+package com.lp.classload;
+/**
+ * 非法向前引用变量
+ * @author Administrator
+ *
+ */
+public class Test1 {
+	static{
+		i=0;
+//		System.out.println(i);
+	}
+	static int i;
+	
+}
