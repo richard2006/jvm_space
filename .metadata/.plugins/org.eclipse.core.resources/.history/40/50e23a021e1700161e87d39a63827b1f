@@ -1,0 +1,21 @@
+package com.lp.classload;
+/**
+ * 由于父类的＜clinit＞（）方法先执行，也就意味着父类中定义的静态语句块要优先于子类的变量赋值操作，
+ * 如在【代码清单】7-6中，字段B的值将会是2而不是1。
+ * @author Administrator
+ *
+ */
+public class Test7_6{
+	public static void main(String[] args) {
+		System.out.println(Sub.B);
+	}
+}
+ class Parent {
+	public static int A=1;
+	static{
+		A=2;
+	}
+}
+ class Sub extends Parent{
+	public static int B=A;
+}

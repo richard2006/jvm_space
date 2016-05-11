@@ -4,7 +4,7 @@ package com.lp.classload;
  * @author Administrator
  *
  */
-public class Test7_5 {
+public class Test1 {
 	static{
 		i=0;
 //		System.out.println(i);//非法向前变量引用

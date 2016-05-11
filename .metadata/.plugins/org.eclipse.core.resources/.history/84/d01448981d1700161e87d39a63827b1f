@@ -1,0 +1,8 @@
+package com.lp.classload;
+
+public class Test7_6 {
+	public static int A=1;
+	static{
+		A=2;
+	}
+}
